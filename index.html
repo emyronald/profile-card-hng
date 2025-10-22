@@ -21,74 +21,85 @@
     <script src="./script.js" defer></script>
   </head>
   <body>
-    <article class="profile-card" data-testid="test-profile-card">
-      <div class="img-container">
-        <figure>
-          <img
-            src="./james-stewart-675177_1280.jpg"
-            alt="User Avatar"
-            class="user-avatar"
-            data-testid="test-user-avatar"
-          />
-        </figure>
-      </div>
-      <div class="content">
-        <h2
-          aria-label="user name"
-          class="user-name"
-          data-testid="test-user-name"
-        >
-          Chiemezie Uzoho
-        </h2>
-        <p class="user-bio" data-testid="test-user-bio">
-          Web Developer | Tech Enthusiast
-        </p>
-        <p class="user-time" data-testid="test-user-time"></p>
-        <nav class="user-social-links" data-testid="test-user-social-links">
-          <a
-            href="https://facebook.com/uzoho.chiemezie"
-            class="social-link"
-            data-testid="test-user-social-facebook"
-            target="_blank"
-            rel="noopener noreferrer"
-            ><i><i class="fa-brands fa-facebook"></i></i
-          ></a>
-          <a
-            href="www.linkedin.com/in/chiemezie-uzoho-03a0a3269"
-            class="social-link"
-            data-testid="test-user-social-linkedin"
-            target="_blank"
-            rel="noopener noreferrer"
-            ><i><i class="fa-brands fa-linkedin"></i></i
-          ></a>
-          <a
-            href="https://github.com/emyronald"
-            class="social-link"
-            data-testid="test-user-social-github"
-            target="_blank"
-            rel="noopener noreferrer"
-            ><i><i class="fa-brands fa-github"></i></i
-          ></a>
-        </nav>
-        <div class="sections">
-          <section>
-            <h3>Hobbies</h3>
-            <ul class="user-hobbies" data-testid="test-user-hobbies">
-              <li>Photography</li>
-              <li>Traveling</li>
-              <li>Reading</li>
-            </ul>
-          </section>
-          <section>
-            <h3>Dislikes</h3>
-            <ul class="user-dislikes" data-testid="test-user-dislikes">
-              <li>Spam Emails</li>
-              <li>Loud Noises</li>
-              <li>Traffic Jams</li>
-            </ul>
-          </section>
+    <header>
+      <nav class="nav-bar">
+        <ul>
+          <li><a href="./index.html">Home</a></li>
+          <li><a href="./aboutMe.html">About Me</a></li>
+          <li><a href="./contactUs.html">Contact Us</a></li>
+        </ul>
+      </nav>
+    </header>
+    <main class="home-main">
+      <article class="profile-card" data-testid="test-profile-card">
+        <div class="img-container">
+          <figure>
+            <img
+              src="./james-stewart-675177_1280.jpg"
+              alt="User Avatar"
+              class="user-avatar"
+              data-testid="test-user-avatar"
+            />
+          </figure>
         </div>
-      </div>
-    </article>
+        <div class="content">
+          <h2
+            aria-label="user name"
+            class="user-name"
+            data-testid="test-user-name"
+          >
+            Chiemezie Uzoho
+          </h2>
+          <p class="user-bio" data-testid="test-user-bio">
+            Web Developer | Tech Enthusiast
+          </p>
+          <p class="user-time" data-testid="test-user-time"></p>
+          <nav class="user-social-links" data-testid="test-user-social-links">
+            <a
+              href="https://facebook.com/uzoho.chiemezie"
+              class="social-link"
+              data-testid="test-user-social-facebook"
+              target="_blank"
+              rel="noopener noreferrer"
+              ><i><i class="fa-brands fa-facebook"></i></i
+            ></a>
+            <a
+              href="www.linkedin.com/in/chiemezie-uzoho-03a0a3269"
+              class="social-link"
+              data-testid="test-user-social-linkedin"
+              target="_blank"
+              rel="noopener noreferrer"
+              ><i><i class="fa-brands fa-linkedin"></i></i
+            ></a>
+            <a
+              href="https://github.com/emyronald"
+              class="social-link"
+              data-testid="test-user-social-github"
+              target="_blank"
+              rel="noopener noreferrer"
+              ><i><i class="fa-brands fa-github"></i></i
+            ></a>
+          </nav>
+          <div class="sections">
+            <section>
+              <h3>Hobbies</h3>
+              <ul class="user-hobbies" data-testid="test-user-hobbies">
+                <li>Photography</li>
+                <li>Traveling</li>
+                <li>Reading</li>
+              </ul>
+            </section>
+            <section>
+              <h3>Dislikes</h3>
+              <ul class="user-dislikes" data-testid="test-user-dislikes">
+                <li>Spam Emails</li>
+                <li>Loud Noises</li>
+                <li>Traffic Jams</li>
+              </ul>
+            </section>
+          </div>
+        </div>
+      </article>
+    </main>
   </body>
 </html>

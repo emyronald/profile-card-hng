@@ -11,13 +11,49 @@
 }
 
 body {
+  background-color: #f0f0f0;
+  font-family: "Roboto", sans-serif;
+}
+
+.nav-bar {
+  background-color: rgba(44, 127, 195, 1);
+  padding: 1rem 2rem;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  display: flex;
+  justify-content: center;
+}
+
+.nav-bar ul {
+  list-style: none;
+  display: flex;
+  gap: 2rem;
+}
+
+.nav-bar ul li a {
+  color: #fff;
+  text-decoration: none;
+  font-weight: bold;
+  font-size: large;
+  padding: 0.5rem 1rem;
+  border-radius: 0.2rem;
+  transition: all 0.3s ease-in-out;
+}
+.nav-bar ul li a:hover {
+  color: rgba(44, 127, 195, 1);
+  background-color: #fff;
+}
+
+.nav-bar ul li a:active {
+  color: rgba(44, 127, 195, 1);
+  background-color: #fff;
+}
+
+.home-main {
   display: flex;
   justify-content: center;
   align-items: center;
-  height: 100vh;
-  background-color: #f0f0f0;
   padding: 2rem;
-  font-family: "Roboto", sans-serif;
+  min-height: 100vh;
 }
 
 .profile-card {
@@ -25,7 +61,7 @@ body {
   flex-direction: column;
   align-items: center;
   background-color: #fff;
-  border-radius: 8px;
+  border-radius: 1rem;
   box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
 }
 
@@ -54,11 +90,11 @@ figure {
 .img-container {
   background-color: rgba(44, 127, 195, 0.3);
   padding: 2rem;
-  border-radius: 5px 5px 0 0;
+  border-radius: 1rem 1rem 0 0;
 }
 
 .user-name {
-  font-size: 1.5rem;
+  font-size: 1.6rem;
   margin: 1rem 0 0.5rem 0;
 }
 .user-bio {
@@ -67,28 +103,119 @@ figure {
   margin-bottom: 1rem;
 }
 
-nav {
+.user-social-links {
   display: flex;
   gap: 1rem;
   margin-bottom: 1rem;
   justify-content: center;
   font-size: x-large;
 }
-nav a {
+.user-social-links a {
   color: rgba(44, 127, 195);
   text-decoration: none;
 }
-nav a:hover {
+.user-social-links a:hover {
   color: rgba(44, 127, 195, 0.3);
 }
 
 .sections {
-  padding: 1rem 2rem 2rem 2rem;
+  padding: 0rem 2rem 2rem 2rem;
   width: 100%;
   display: flex;
   justify-content: space-between;
   gap: 2rem;
 }
+
+.content {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+section h3 {
+  margin-bottom: 0.1rem;
+  margin-left: -1rem;
+}
+
+label {
+  display: block;
+}
+
+form {
+  width: 80%;
+  max-width: 40rem;
+  display: flex;
+  flex-direction: column;
+}
+
+.contact-submit {
+  background-color: rgba(44, 127, 195, 1);
+  color: #fff;
+  border: none;
+  padding: 0.7rem;
+  border-radius: 0.3rem;
+  cursor: pointer;
+  font-size: 1rem;
+  transition: background-color 0.01s ease-in-out;
+  width: 60%;
+  max-width: 20rem;
+  margin: auto;
+}
+.contact-submit:hover {
+  background-color: rgba(45, 139, 216, 0.9);
+}
+.contact-main {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 2rem;
+  min-height: 80vh;
+}
+
+form input,
+form textarea {
+  width: 100%;
+  padding: 0.5rem;
+  margin-bottom: 1rem;
+  border: 1px solid #ccc;
+  border-radius: 0.3rem;
+}
+
+.error {
+  position: absolute;
+  top: 12%;
+  background-color: red;
+  color: #fff;
+  padding: 0.5rem;
+  border-radius: 0.3rem;
+}
+
+.hidden {
+  display: none;
+}
+
+.about-main {
+ padding: 3rem;
+ max-width: 80ch;
+  margin: auto;
+  display: flex;
+  flex-direction: column;
+  gap: 2rem;
+  
+}
+
+.bio {
+  font-size: 1.2rem;
+  line-height: 1.6;
+  color: #333;
+}
+
+.about-main li {margin-left: 1rem;}
+.about-main h2 {
+  margin-bottom: .5rem;
+  color: rgba(44, 127, 195, 1);
+}
+
 
 @media (min-width: 768px) {
   .profile-card {

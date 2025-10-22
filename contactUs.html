@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link rel="stylesheet" href="styles.css" />
+    <script src="./script.js" defer></script>
+  </head>
+  <body>
+    <header>
+      <nav class="nav-bar">
+        <ul>
+          <li><a href="./index.html">Home</a></li>
+          <li><a href="./aboutMe.html">About Me</a></li>
+          <li><a href="./contactUs.html">Contact Us</a></li>
+        </ul>
+      </nav>
+    </header>
+    <main class="contact-main">
+      </p>
+      <form action="#" >
+        <label for="name">
+          Name:
+          <input
+            type="text"
+            id="name"
+            name="name"
+            required
+            data-testid="test-contact-name"
+            placeholder="John Doe"
+          />
+          <span class="error-message name-error"></span>
+        </label>
+
+        <label for="email">
+          Email:
+          <input
+            type="email"
+            id="email"
+            name="email"
+            required
+            data-testid="test-contact-email"
+            placeholder="rYd9U@example.com"
+          />
+          <span class="error-message email-error"></span>
+        </label>
+
+        <label for="subject">
+          Subject:
+          <input
+            type="text"
+            id="subject"
+            name="subject"
+            required
+            data-testid="test-contact-subject"
+            placeholder="Hello"
+          />
+          <span class="error-message subject-error"></span>
+        </label>
+
+        <label for="message">
+          Message:
+          <textarea
+            id="message"
+            name="message"
+            required
+            data-testid="test-contact-message"
+            placeholder="Hello!"
+            rows="8"
+            minlength="10"
+          ></textarea>
+          <span class="error-message message-error"></span>
+        </label>
+
+        <button
+          class="contact-submit"
+          type="submit"
+          data-testid="test-contact-submit"
+        >
+          Send Message
+        </button>
+      </form>
+
+      <p class="success-message" data-testid="test-contact-submit"></p>
+    </main>
+  </body>
+</html>
